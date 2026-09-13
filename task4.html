@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 - Table & Form</title>
+  <link rel="stylesheet" href="css/task4.css">
+</head>
+<body>
+  <div class="top-nav">
+    <a href="index.html">Task 1</a>
+    <a href="task2.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="task4.html" class="active">Task 4</a>
+    <a href="task5.html">Task 5</a>
+  </div>
+
+  <!-- Table Section -->
+  <h1 id="table-title">Student Grade Report</h1>
+  <table class="grade-table">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Aruzhan</td>
+        <td>Web Development 1</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Dauyl</td>
+        <td>Operating Systems 2</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Maxim</td>
+        <td>Analytic Methods</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>Advanced Programming 2</td>
+        <td>A-</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Form Section -->
+  <div class="form-wrapper" id="feedback-form-container">
+    <h2>Course Feedback Form</h2>
+    <form action="#" method="POST">
+      <label for="username">Full Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Would you recommend this course?</label>
+      <div class="radio-options">
+        <label><input type="radio" name="recommend" value="yes" checked> Yes</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+      </div>
+
+      <label for="comments">Comments & Feedback:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
