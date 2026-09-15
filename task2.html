@@ -1,50 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task 2 - Float Layout</title>
-  <link rel="stylesheet" href="css/task2.css">
-</head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Task 2 | Float Layout</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-  <!-- Header Section -->
-  <div id="header">
-    <h1>Task 2: Simple Webpage Layout</h1>
-    <div class="navbar">
-      <a href="index.html">Task 1</a>
-      <a href="task2.html" class="active">Task 2</a>
-      <a href="task3.html">Task 3</a>
-      <a href="task4.html">Task 4</a>
-      <a href="task5.html">Task 5</a>
+  <div class="site-header"><h1>Study Space</h1><p>A simple float-based page layout</p></div>
+  <div class="navbar"><a href="index.html">Task 1</a><a class="active" href="task2.html">Task 2</a><a href="task3.html">Task 3</a><a href="task4.html">Task 4</a><a href="task5.html">Task 5</a></div>
+  <div class="container">
+    <div class="layout-wrap">
+      <div class="sidebar"><h2>Menu</h2><ul><li>HTML Notes</li><li>CSS Practice</li><li>Project Ideas</li></ul></div>
+      <div class="main-aside"><h2>Welcome to Study Space</h2><p>This layout uses only <code>div</code> elements and CSS floats for its two-column middle area. The menu stays on the left while the main content appears on the right.</p><p>It includes colored sections, spacing, borders, and shadows to make each area easy to distinguish.</p></div>
     </div>
   </div>
-
-  <div id="main-container">
-    <!-- Sidebar Menu (Left Column) -->
-    <div id="sidebar">
-      <h3>Sidebar Menu</h3>
-      <ul>
-        <li><a href="#task1">Task 1 Link</a></li>
-        <li><a href="#task2">Task 2 Link</a></li>
-        <li><a href="#task3">Task 3 Link</a></li>
-        <li><a href="#task4">Task 4 Link</a></li>
-      </ul>
-    </div>
-
-    <!-- Main Content / Aside (Right Column) -->
-    <div id="main-content">
-      <h2>Main Content Heading</h2>
-      <p>This layout is built strictly using traditional <code>div</code> elements and <code>float</code> CSS properties (no Flexbox or Grid used).</p>
-      <p>The sidebar menu is floated to the left, while this main content block is floated to the right. A clear element is used below both columns to reset the document flow before the footer.</p>
-    </div>
-
-    <!-- Clearfix to reset float -->
-    <div class="clearfix"></div>
-  </div>
-
-  <!-- Footer Section -->
-  <div id="footer">
-    <p>&copy; 2026 Student Web Development Project. All Rights Reserved.</p>
-  </div>
-</body>
-</html>
+  <div class="site-footer">© 2026 Study Space. All rights reserved.</div>
+</body></html>

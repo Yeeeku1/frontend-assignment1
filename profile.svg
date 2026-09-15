@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Student profile image</title>
+  <desc id="desc">A simple blue avatar illustration for a student profile</desc>
+  <rect width="400" height="400" fill="#247ba0"/>
+  <circle cx="200" cy="145" r="75" fill="#f4c7a1"/>
+  <path d="M65 370c15-95 80-142 135-142s120 47 135 142" fill="#173b5c"/>
+  <path d="M124 138c0-70 35-100 78-100 57 0 80 47 76 115-19-33-51-48-84-48-27 0-48 10-70 33z" fill="#253849"/>
+</svg>
